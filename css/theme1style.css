@@ -1,0 +1,439 @@
+body {
+    background-image: url(../images/theme1_background.jpg);
+    padding: 25px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    border-radius: 25px;
+    text-decoration: none;
+    background-image: url(../images/theme1_background.jpg);
+}
+
+.footer {
+    border-radius: 25px;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    background-image: url(../images/theme1_background.jpg);
+}
+
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+
+/***** Styling for google serch bar  *****/
+
+input[type="search"] {
+    text-align: center;
+    background-color: white;
+    height: 25px;
+    width: 20%;
+    margin-right: 1%;
+    float: right;
+    border-radius: 20px;
+    border: none;
+}
+
+
+/***** Styling for theme anchor *****/
+
+.main-nav a {
+    color: white;
+    font-family: sans-serif;
+    margin-right: 1%;
+    font-size: 20px;
+    float: right;
+    text-decoration: none;
+}
+
+
+/**** Styling for header ****/
+
+#header {
+    text-shadow: 2px 3px 2px #FFF;
+    margin-left: 4%;
+    color: purple;
+    font-size: 40px;
+    font-family: serif;
+    font-weight: 700;
+}
+
+
+/**** Styling for sub header ****/
+
+#slogan {
+    color: dodgerblue;
+    line-height: 1em;
+    font-size: 1.2em;
+    font-family: sans-serif;
+}
+
+
+/**** Styling for sub header *****/
+
+#html5 {
+    font-style: italic;
+    font-size: 21px;
+    color: limegreen;
+}
+
+
+/**** Styling for sub header ****/
+
+#css3 {
+    font-style: italic;
+    font-size: 21px;
+    color: gold;
+}
+
+
+/************** Styling for conatiner 1 *******************/
+
+#continer1 {
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 25px;
+    margin: 0 10px 10px 0;
+    width: 100%;
+    height: 400px;
+    background-color: dodgerblue;
+}
+
+
+/****** Styling for conatiner 1 html-material *******/
+
+#container1-html-material {
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 18px;
+    float: left;
+    margin: 0 auto;
+    max-width: 50%;
+    max-height: 360px;
+    overflow: auto;
+    -webkit-box-sizing: border-box;
+    padding: 10px 50px;
+}
+
+
+/****** Styling for conatiner 1 css-material *******/
+
+#container1-css-material {
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 18px;
+    float: right;
+    margin: 0 auto;
+    max-width: 50%;
+    max-height: 360px;
+    overflow: auto;
+    -webkit-box-sizing: border-box;
+    padding: 10px 50px;
+}
+
+
+/****** Styling for html 5 and css3 text heading *******/
+
+.html5-logo,
+.css3-logo {
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/****** Styling for html 5 logo *******/
+
+.html-logo {
+    background-image: url(../images/HTML5_logo_and_wordmark.svg.png);
+}
+
+
+/**** Styling for conatiner header *****/
+
+.container-heading {
+    font-family: sans-serif;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+}
+
+
+/************** Styling for conatiner 2 *******************/
+
+#continer2 {
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 25px;
+    margin: 0 10px 10px 0;
+    width: 100%;
+    height: 500px;
+    background-color: purple;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+.slides {
+    padding: 0;
+    width: 100%;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide-container {
+    display: block;
+}
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 440px;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label {
+    opacity: 0.5;
+}
+
+.nav label:hover {
+    opacity: 1;
+}
+
+.nav .next {
+    right: 0;
+}
+
+input:checked + .slide-container .slide {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label {
+    display: block;
+}
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+/********************* Styling for conatiner 3 *********************/
+
+#continer3 {
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 25px;
+    margin: 0 10px 10px 0;
+    width: 100%;
+    height: 400px;
+    background-color: gold;
+}
+
+
+/********************* Styling for conatiner 4 *********************/
+
+#continer4 {
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 25px;
+    margin: 0 10px 10px 0;
+    width: 100%;
+    height: 400px;
+    background-color: limegreen;
+}
+
+
+/*********** Styling for conatiner 4 material *************/
+
+.container4-leftmaterial {
+    line-height: 4em;
+    text-align: justify;
+    float: left;
+    margin: 0 auto;
+    max-height: 360px;
+    -webkit-box-sizing: border-box;
+    padding: 10px 60px;
+}
+
+.container4-rightmaterial {
+    text-align: justify;
+    float: right;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    padding: 15px 60px;
+}
+
+input[type="text"] {
+    text-align: left;
+    width: 200%;
+    height: 50px;
+    border: 2px solid gray;
+    background-color: white;
+}
+
+input[type="email"] {
+    width: 200%;
+    height: 50px;
+    border: none;
+    border: 2px solid gray;
+    background-color: white;
+}
+
+input[type="submit"] {
+    color: gray;
+    width: 90%;
+    height: 50px;
+    border: none;
+    border: 2px solid gray;
+    background-color: white;
+}
+
+
+/********* Styling for logo *************/
+
+#preloader6 {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    animation: preloader_6 5s infinite linear;
+    -webkit-animation: preloader_6 5s infinite linear;
+}
+
+#preloader6 span {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: red;
+    display: block;
+    animation: preloader_6_span 1s infinite linear;
+    -webkit-animation: preloader_6_span 1s infinite linear;
+}
+
+#preloader6 span:nth-child(1) {
+    background: #2ecc71;
+}
+
+#preloader6 span:nth-child(2) {
+    left: 22px;
+    background: #9b59b6;
+    -animation-delay: .2s;
+    -webkit-animation-delay: .2s;
+}
+
+#preloader6 span:nth-child(3) {
+    top: 22px;
+    background: #3498db;
+    animation-delay: .4s;
+    -webkit-animation-delay: .4s;
+}
+
+#preloader6 span:nth-child(4) {
+    top: 22px;
+    left: 22px;
+    background: #f1c40f;
+    animation-delay: .6s;
+    -webkit-animation-delay: .6s;
+}
+
+
+/******* creating keyframes for logo movement ******/
+
+@-webkit-keyframes preloader_6_span {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes preloader_6_span {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
